@@ -63,7 +63,7 @@ body {
 /* The footer and our remix on glitch button */
 
 .tagline {
-  font-size: clamp(1rem, 0.925rem + 0.3333vw, 1.1rem);
+  font-size: 26px;
 }
 .footer {
   display: flex;
