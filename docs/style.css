@@ -21,7 +21,7 @@ START Page structure and element resets
   /* Colors you'll see cascade through the elements */
 
   /* Set your own colors! */
-  --color-bg: #ffbfee; /* Used for the page body background */
+  --color-bg: #eee; /* Used for the page body background */
   --color-bg-alt: #000000; /* Used for social icons on hover */
   --color-text-main: #000000; /* List text ann social icons on hover */
   --color-primary: #BFFFEF; /* Headers and borders */
@@ -43,7 +43,7 @@ START Page structure and element resets
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
-  background: fixed linear-gradient(0deg, #9580ff, #FFBDCD);
+  background: fixed linear-gradient(0deg, #87CEEB, #eee);
   text-align: left;
   color: var(--color-text-main);
 }
