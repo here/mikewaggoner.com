@@ -43,7 +43,7 @@ The events list is grouped by year (descending) then sorted by date within each 
 <li><a href="https://sfconservancy.org/fossy/community-tracks/">FOSSY Vancouver BC</a> - Aug 6-9</li>
 ```
 
-When adding a conference, always fetch the event URL to confirm dates and location before editing.
+When adding a conference, always fetch the event URL to confirm dates and location before editing. Preserve stylized capitalizations exactly as the event uses them (e.g. `SCaLE`, not `SCALE`).
 
 ### General HTML Conventions
 
