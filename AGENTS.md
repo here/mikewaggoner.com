@@ -51,6 +51,12 @@ When adding a conference, always fetch the event URL to confirm dates and locati
 - No trailing whitespace changes to unrelated lines
 - Do not reformat or reorganize sections not being edited
 
+## Development Environment
+
+- **Editor: VS Code** (not Cursor)
+- When suggesting interactive file actions or "open in editor" links, use VS Code
+- `.vscode/` settings may be added if needed; do not add `.cursor/` or Cursor-specific config
+
 ## Branch and Commit Conventions
 
 - Work on `claude/` branches as specified by the task
