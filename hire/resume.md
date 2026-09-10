@@ -6,11 +6,16 @@ mike@herebox.org · [linkedin.com/in/mikehere](https://www.linkedin.com/in/mikeh
 
 ## Summary
 
-Staff-level solutions architect and technical leader with 10+ years building identity infrastructure, internal platforms, and knowledge systems at enterprise scale. Now focusing on projects at the intersection of open web standards, geospatial/geosocial tooling, and digital civics. Open to full-time, contract, advisory, and fractional engagements.
+Staff-level solutions engineer and technical leader with 10+ years building enterprise identity infrastructure, internal tooling, knowledge management.  Now focusing on projects at the intersection of web standards, geosocial, and digital civics.  Open to full-time, contract, advisory, and fractional engagements.
 
 ---
 
 ## Experience
+
+### AI Consulting
+*2024 - Current*
+
+Working with organizations to incorporate AI automation into their individual workflows and SDLC process.
 
 ### The Walt Disney Company — Staff Solutions Architect
 *2014 – 2024 · Enterprise Architecture & Security*
@@ -19,16 +24,17 @@ Technical leader embedded with Enterprise Architecture and Security teams, setti
 
 **Select projects:**
 
-- **Employee Directory** — Designed and built a custom directory system aggregating ~1 million records from multiple HCMs (Workday, SAP). Focused on data normalization, access control, and performance at scale.
-- **Knowledge Management Systems** — Delivered internal platforms for theme park operations, legal brand guidelines, Disney archives, and infosec standards. Included reference cloud architecture documentation used across the enterprise.
 - **Identity & Access Management** — Consulted on IAM strategy and migrations from on-prem CA SiteMinder (2014) through Okta and SailPoint (2024). Integrated SAML, OAuth, AWS Cognito, and related standards across hundreds of internal and partner applications.
+- **Employee Directory** — Lead integration of custom directory system aggregating multiple HCMs (Workday, SAP). Focused on data normalization, access control, and performance at scale.
+- **Knowledge Management Systems** — Delivered internal platforms for theme park operations, legal brand guidelines, Disney archives, and infosec standards. Included reference cloud architecture documentation used across the enterprise.
 
 ---
 
 ### WebUrbanist — Director of Technology
-*[dates TBD] · Pre-2014*
+*2008 - 2014*
 
-<!-- TODO: Add dates, scope, key responsibilities/projects -->
+- **Web Scaling** - Grow viral web property to sustain massive traffic spikes from social media.  Managed server tuning and technical strategy with traditional LAMP stack.
+- **Personalization** - Deliver personalized content to user segments based on complex realtime conditional decisionmaking via JavaScript and extensive caching.
 
 ---
 
@@ -65,14 +71,6 @@ Active participant in the open web, identity standards, and civic tech communiti
 - **Mobility & Civics:** CoMotion, IPMI, MoveLA
 - **Maker / Hacker:** ToorCamp, EMF Camp, Hackaday Supercon
 
----
-
-## Education
-
-<!-- TODO: Add degree, institution, year -->
-
----
-
 ## Target Engagements
 
 Well-suited for organizations building:
@@ -82,7 +80,3 @@ Well-suited for organizations building:
 - Geospatial, geosocial, or environmental data systems
 
 Open to: full-time staff/senior IC roles, contract and freelance engagements, advisory and fractional work.
-
----
-
-*This file is the source-of-truth boilerplate. Generate focused versions and PDF/DOCX exports from this document as needed.*
