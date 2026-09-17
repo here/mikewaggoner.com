@@ -59,7 +59,7 @@ When adding a conference, always fetch the event URL to confirm dates and locati
 
 ## Branch and Commit Conventions
 
-- Work on `claude/` branches as specified by the task
+- Work directly on `main` and push commits there
 - Commit messages: short imperative summary, detail line if needed
 - Only commit `docs/index.html` or `docs/style.css` for content edits; do not stage unrelated files
 
@@ -68,4 +68,3 @@ When adding a conference, always fetch the event URL to confirm dates and locati
 - Do not add comments, docstrings, or annotations to HTML/CSS
 - Do not refactor or reformat code beyond the immediate change
 - Do not add error handling, fallbacks, or new structural elements speculatively
-- Do not push to `main` directly
