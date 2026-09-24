@@ -60,6 +60,7 @@ When adding a conference, always fetch the event URL to confirm dates and locati
 ## Branch and Commit Conventions
 
 - Work directly on `main` and push commits there
+- Show the diff and get explicit user approval before committing
 - Commit messages: short imperative summary, detail line if needed
 - Only commit `docs/index.html` or `docs/style.css` for content edits; do not stage unrelated files
 
