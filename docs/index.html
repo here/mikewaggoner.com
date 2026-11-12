@@ -27,15 +27,15 @@
             <p>
                 Let's spend 30 minutes discovering a new idea!  <a href="https://calendly.com/mike-here/30min">Schedule a time</a> and we can chat about making excellent internet or anything at all.
             </p>
-            <div id="a2a-ask" style="border: 2px solid var(--color-forms); border-radius: 4px; padding: 0.75rem 1rem; margin-bottom: 1rem; background: #ffffffcc;">
+            <div id="a2a-ask" style="margin-bottom: 1rem;">
               <p style="margin-bottom: 0.5rem;">
-                Ask an AI about me, over <a href="https://a2a-protocol.org/">A2A</a>:
+                Ask an AI about me, over <a href="https://a2a-protocol.org/">A2A</a> (<a href="/.well-known/agent-card.json">agent card</a>):
               </p>
-              <p style="margin-bottom: 0.5rem;">
-                <input type="text" id="a2a-question" placeholder="What roles is Mike open to?" style="width: 60%; font-size: 1rem; padding: 0.4rem; border: 2px solid var(--color-forms);" />
-                <button type="button" id="a2a-ask-btn" style="font-size: 1rem; padding: 0.4rem 0.8rem; border: 2px solid var(--color-forms); background: var(--color-buttons); border-radius: 4px; cursor: pointer;">Ask</button>
+              <p style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <input type="text" id="a2a-question" placeholder="What roles is Mike open to?" style="flex: 1; min-width: 0; font-size: 1.1rem; padding: 0.6rem 1.1rem; border: none; border-radius: 999px; background: #ffffffcc; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);" />
+                <button type="button" id="a2a-ask-btn" style="font-size: 1.1rem; padding: 0.6rem 1.3rem; border: none; border-radius: 999px; background: var(--color-primary); cursor: pointer; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);">Ask</button>
               </p>
-              <p id="a2a-answer" style="margin-bottom: 0; font-size: 0.9rem;"></p>
+              <p id="a2a-answer" style="margin-bottom: 0; font-size: 1.1rem; font-style: italic;"></p>
             </div>
             <script>
               (function () {
