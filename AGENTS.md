@@ -6,7 +6,7 @@ Guidelines for AI agents working on this repository.
 
 Static personal portfolio site for Mike Waggoner, served from `docs/` via DigitalOcean App Platform. Deployment is triggered automatically by pushing to the main branch.
 
-**No build step. No package manager. No JavaScript framework.**
+**No build step. No package manager. No JavaScript framework or external dependencies.** Plain vanilla JavaScript (inline `<script>`, no frameworks, libraries, or CDN imports) is allowed for interactive features.
 
 ## File Structure
 
@@ -19,7 +19,7 @@ docs/
 README.md      # Deployment notes
 ```
 
-Do not create new files unless explicitly requested. Do not add JavaScript, build tooling, or dependencies.
+Do not create new files unless explicitly requested. Do not add build tooling or dependencies. Vanilla JavaScript is allowed for interactive features but must stay dependency-free and inline in `docs/index.html`.
 
 ## Editing Style
 

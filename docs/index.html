@@ -27,6 +27,72 @@
             <p>
                 Let's spend 30 minutes discovering a new idea!  <a href="https://calendly.com/mike-here/30min">Schedule a time</a> and we can chat about making excellent internet or anything at all.
             </p>
+            <div id="a2a-ask" style="border: 2px solid var(--color-forms); border-radius: 4px; padding: 0.75rem 1rem; margin-bottom: 1rem; background: #ffffffcc;">
+              <p style="margin-bottom: 0.5rem;">
+                Ask an AI about me, over <a href="https://a2a-protocol.org/">A2A</a>:
+              </p>
+              <p style="margin-bottom: 0.5rem;">
+                <input type="text" id="a2a-question" placeholder="What roles is Mike open to?" style="width: 60%; font-size: 1rem; padding: 0.4rem; border: 2px solid var(--color-forms);" />
+                <button type="button" id="a2a-ask-btn" style="font-size: 1rem; padding: 0.4rem 0.8rem; border: 2px solid var(--color-forms); background: var(--color-buttons); border-radius: 4px; cursor: pointer;">Ask</button>
+              </p>
+              <p id="a2a-answer" style="margin-bottom: 0; font-size: 0.9rem;"></p>
+            </div>
+            <script>
+              (function () {
+                var endpoint = "https://a2a.hearbox.org/";
+                var input = document.getElementById("a2a-question");
+                var button = document.getElementById("a2a-ask-btn");
+                var answer = document.getElementById("a2a-answer");
+
+                function ask() {
+                  var question = input.value.trim();
+                  if (!question) return;
+                  button.disabled = true;
+                  answer.textContent = "Asking...";
+                  fetch(endpoint, {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                      "A2A-Version": "1.0"
+                    },
+                    body: JSON.stringify({
+                      jsonrpc: "2.0",
+                      id: Date.now(),
+                      method: "SendMessage",
+                      params: {
+                        message: {
+                          messageId: crypto.randomUUID(),
+                          role: "ROLE_USER",
+                          parts: [{ text: question }]
+                        }
+                      }
+                    })
+                  })
+                    .then(function (res) { return res.json(); })
+                    .then(function (data) {
+                      if (data.error) {
+                        answer.textContent = "Error: " + data.error.message;
+                        return;
+                      }
+                      var result = data.result || {};
+                      var parts = (result.task && result.task.status && result.task.status.message && result.task.status.message.parts)
+                        || (result.message && result.message.parts);
+                      answer.textContent = parts ? parts.map(function (p) { return p.text; }).join(" ") : "No answer returned.";
+                    })
+                    .catch(function () {
+                      answer.textContent = "Couldn't reach the A2A agent right now.";
+                    })
+                    .finally(function () {
+                      button.disabled = false;
+                    });
+                }
+
+                button.addEventListener("click", ask);
+                input.addEventListener("keydown", function (e) {
+                  if (e.key === "Enter") ask();
+                });
+              })();
+            </script>
             <p>
                 I recently enjoyed 10 years with The Walt Disney Company as technical leader and Staff Solutions Architect.  I worked closely with Enterprise Architecture and Security teams to set standards and provide services to a global workforce.  A few favorite projects include:
             </p>
